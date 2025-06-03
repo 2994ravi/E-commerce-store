@@ -32,10 +32,12 @@ const orderSchema = new mongoose.Schema(
 			required: true,
 			min: 0,
 		},
-		stripeSessionId: {
+		razorpayOrderId: {
 			type: String,
+			required: true,
 			unique: true,
 		},
+
 	},
 	{ timestamps: true }
 );
